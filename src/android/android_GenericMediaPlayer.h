@@ -33,7 +33,7 @@ public:
     MediaPlayerNotificationClient(GenericMediaPlayer* gmp);
 
     // IMediaPlayerClient implementation
-    virtual void notify(int msg, int ext1, int ext2, const Parcel *obj);
+    virtual void notify(int msg, int ext1, int ext2, const Parcel *obj, Parcel *replyObj=NULL);
 
     // Call before enqueuing a prepare event
     void beforePrepare();
